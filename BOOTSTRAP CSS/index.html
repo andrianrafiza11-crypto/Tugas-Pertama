@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio M. Andrian Rafiza - Bootstrap 5</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- ================= 1. NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">M. Andrian R<span>UI</span></a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="text-center">
+                    <!-- Trigger Modal Download CV -->
+                    <button class="btn btn-orange btn-sm text-nowrap px-4" data-bs-toggle="modal" data-bs-target="#downloadCvModal">
+                        Download CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= 2. HERO SECTION ================= -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Left -->
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="hero-greeting">Hi, I am</div>
+                    <div class="hero-name">M. Andrian Rafiza</div>
+                    <h1 class="hero-title">Web Developer</h1>
+                    <p class="hero-desc">
+                        Membangun website bukan sekadar menulis kode. Saya menciptakan pengalaman digital yang menarik, responsif, dan membantu bisnis maupun personal brand tampil lebih terpercaya di dunia digital.
+
+Mari wujudkan website yang bukan hanya terlihat bagus, tetapi juga punya tujuan.
+                    </p>
+                    
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-4">
+                        <button class="btn btn-orange px-4 py-2" data-bs-toggle="modal" data-bs-target="#hireMeModal">
+                            Join With Me
+                        </button>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-links text-center text-lg-start pt-2">
+                        <a href="#" title="TikTok"><i class="bi bi-Tiktok"></i></a>
+                        <a href="#" title="Youtube"><i class="bi bi-Youtube"></i></a>
+                        <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Profile Picture Right -->
+                <div class="col-lg-5 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+                    <div class="profile-img-wrapper">
+                        <img src="profilwebsite.jpeg" alt="Foto Profil M. Andrian Rafiza" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 3. ABOUT ME SECTION ================= -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Saya membantu mengubah ide menjadi website yang modern, profesional, dan berfungsi dengan baik.
+                </p>
+            </div>
+
+            <!-- 6 Biodata Cards Grid (Responsive Grid Bootstrap) -->
+            <div class="row g-4 mt-2">
+                <!-- Card 1: Full Name -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-card d-flex align-items-start gap-3">
+                        <div class="biodata-icon flex-shrink-0">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <div>
+                            <div class="biodata-label">Full Name</div>
+                            <h3 class="biodata-value">M. Andrian R</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Education -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-card d-flex align-items-start gap-3">
+                        <div class="biodata-icon flex-shrink-0">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <div>
+                            <div class="biodata-label">Education</div>
+                            <h3 class="biodata-value">Huaqiao University</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Pekerjaan -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-card d-flex align-items-start gap-3">
+                        <div class="biodata-icon flex-shrink-0">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+                        <div>
+                            <div class="biodata-label">Pekerjaan</div>
+                            <h3 class="biodata-value">Freelancer / Web Developer</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Contact -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-card d-flex align-items-start gap-3">
+                        <div class="biodata-icon flex-shrink-0">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div>
+                            <div class="biodata-label">Contact</div>
+                            <h3 class="biodata-value">andrian.rafiza@example.com</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Hobi -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-card d-flex align-items-start gap-3">
+                        <div class="biodata-icon flex-shrink-0">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <div>
+                            <div class="biodata-label">Hobi</div>
+                            <h3 class="biodata-value">Membaca, Coding, Traveling</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Alamat -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="biodata-card d-flex align-items-start gap-3">
+                        <div class="biodata-icon flex-shrink-0">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <div class="biodata-label">Alamat</div>
+                            <h3 class="biodata-value">Jl. Mawar No. 123, Jakarta</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 4. MY PROJECTS SECTION ================= -->
+    <section id="projects" class="py-5">
+        <div class="container py-4">
+            <div class="text-center">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">
+                    Saya membuat website modern, profesional, dan responsif untuk membantu bisnis dan personal brand tampil lebih terpercaya di era digital.
+                </p>
+
+                <!-- Filter Tab Buttons -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                    <button class="project-filter-btn">All</button>
+                    <button class="project-filter-btn">UI/UX</button>
+                    <button class="project-filter-btn active">Web Design</button>
+                    <button class="project-filter-btn">App Design</button>
+                    <button class="project-filter-btn">Graphic Design</button>
+                </div>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="row g-4">
+                <!-- Project Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card" onclick="showProjectModal('AirCalling Landing Page Design', 'Web Design', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80')">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="AirCalling Landing Page">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-category">Web Design</div>
+                            <h3 class="project-title">AirCalling Landing Page Design</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card" onclick="showProjectModal('Business Landing Page Design', 'Web Design', 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80')">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Business Landing Page">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-category">Web Design</div>
+                            <h3 class="project-title">Business Landing Page Design</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card" onclick="showProjectModal('Ecom Web Page Design', 'Web Design', 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80')">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Ecom Web Page">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-category">Web Design</div>
+                            <h3 class="project-title">Ecom Web Page Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. FOOTER ================= -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Andrian. All rights reserved. Built with Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- ================= 6. POPUP MODALS (BOOTSTRAP MODAL) ================= -->
+
+    <!-- Modal 1: Hire Me / Form Kontak -->
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="hireMeModalLabel">Hire Me / Form Kontak</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted small mb-4">Silakan isi formulir di bawah ini untuk mengirimkan tawaran proyek atau pesan langsung.</p>
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="mb-3">
+                            <label class="form-label small fw-semibold text-dark">Nama Lengkap</label>
+                            <input type="text" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-semibold text-dark">Email</label>
+                            <input type="email" class="form-control" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-semibold text-dark">Pesan / Detail Proyek</label>
+                            <textarea class="form-control" rows="4" placeholder="Jelaskan kebutuhan proyek Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-orange w-100 py-2">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Download CV -->
+    <div class="modal fade" id="downloadCvModal" tabindex="-1" aria-labelledby="downloadCvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg text-center p-4">
+                <div class="modal-body">
+                    <div class="mb-3 text-warning display-4">
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2">Download Curriculum Vitae</h4>
+                    <p class="text-muted small mb-4">Klik tombol di bawah ini untuk mengunduh berkas CV M. Andrian R (PDF).</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <button type="button" class="btn btn-light px-4" data-bs-dismiss="modal">Batal</button>
+                        <a href="#" onclick="alert('Mengunduh CV...');" class="btn btn-orange px-4">Download Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Detail Proyek (Dynamic Content) -->
+    <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-4 shadow-lg overflow-hidden">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <img id="modalProjectImg" src="" alt="Project Image" class="w-100 rounded-3 mb-3 object-fit-cover" style="height: 320px;">
+                    <span id="modalProjectCategory" class="badge bg-warning text-dark mb-2">Web Design</span>
+                    <h3 id="modalProjectTitle" class="fw-bold mb-3">Project Title</h3>
+                    <p class="text-muted small leading-relaxed">
+                        Ini adalah deskripsi detail mengenai hasil perancangan UI/UX dan pengembangan website. Proyek ini dibangun dengan fokus pada performa, aksesibilitas, serta tata letak responsif menggunakan Bootstrap.
+                    </p>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Interaktivitas Filter Proyek
+        const filterBtns = document.querySelectorAll('.project-filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Tampilkan Modal Detail Proyek
+        function showProjectModal(title, category, imgSrc) {
+            document.getElementById('modalProjectTitle').innerText = title;
+            document.getElementById('modalProjectCategory').innerText = category;
+            document.getElementById('modalProjectImg').src = imgSrc;
+            
+            const projectModal = new bootstrap.Modal(document.getElementById('projectDetailModal'));
+            projectModal.show();
+        }
+
+        // Simulasi Submit Form
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            const modalElem = document.getElementById('hireMeModal');
+            const modalInstance = bootstrap.Modal.getInstance(modalElem);
+            modalInstance.hide();
+        }
+    </script>
+</body>
+</html>

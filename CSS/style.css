@@ -1,0 +1,275 @@
+:root {
+            --primary-color: #2563eb;       /* Warna biru utama (brand/tombol/header) */
+            --primary-dark: #1d4ed8;        /* Warna biru tua untuk hover tombol */
+            --primary-light: #eff6ff;       /* Warna biru sangat muda untuk latar card */
+            --text-dark: #1e293b;           /* Warna teks gelap utama */
+            --text-muted: #64748b;          /* Warna teks sekunder (abu-abu) */
+            --bg-body: #dbeafe;             /* Warna latar belakang luar */
+            --bg-card: #ffffff;             /* Warna putih untuk kartu */
+            --border-color: #cbd5e1;        /* Warna garis tepi */
+            --radius: 10px;                 /* Sudut melengkung */
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Efek bayangan */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .page-container {
+            width: 100%;
+            max-width: 1100px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+            overflow: hidden;
+            border: 2px solid #93c5fd;
+        }
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 16px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .brand {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .navbar .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .navbar .nav-links a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        .hero-section {
+            padding: 40px 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .hero-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 480px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .about-section {
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 30px;
+        }
+        .biodata-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .biodata-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 16px 20px;
+            border-radius: var(--radius);
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            text-align: center;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+
+        .biodata-card:hover {
+            border-color: var(--primary-color);
+            background-color: var(--primary-light);
+        }
+
+        .biodata-card span.label {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        .portfolio-section {
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .portfolio-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary-color);
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .portfolio-info {
+            padding: 16px;
+            text-align: center;
+        }
+
+        .portfolio-info h3 {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .portfolio-info p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 850px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image img {
+                max-width: 100%;
+                height: 240px;
+            }
+
+            .biodata-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 550px) {
+            body {
+                padding: 10px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .navbar .nav-links {
+                gap: 12px;
+            }
+
+            .hero-section, .about-section, .portfolio-section {
+                padding: 24px 16px;
+            }
+
+            .hero-content h1 {
+                font-size: 1.4rem;
+            }
+
+            .biodata-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }

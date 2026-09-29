@@ -56,7 +56,7 @@
                     </h5>
 
                     <!-- FORM MENGARAHKAN LANGSUNG KE PROSES_PRODUK.PHP -->
-                    <form action="proses_produk.php" method="POST">
+                    <form action="produk_input_process.php" method="POST">
                         
                         <!-- Input Nama Produk -->
                         <div class="mb-3">
